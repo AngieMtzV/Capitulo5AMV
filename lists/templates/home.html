@@ -1,0 +1,17 @@
+<html>
+      <head>
+           <title> Lista de Alumnos</title>
+      </head>
+      <body>
+	<h1> Lista de 7B </h1>
+	<form method="POST">
+	<input name="item_text" id="id_new_item" placeholder="Ingresa un alumno nuevo" />
+	{% csrf_token %}
+	</form>
+        <table id="id_list_table">
+ 		<tr><td>{{new_item_text }}</td></tr>
+	</table>
+      </body>
+
+</html>
+
